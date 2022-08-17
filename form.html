@@ -1,0 +1,83 @@
+<!doctype html>
+
+<html>
+
+	<head>
+		<title>Table Tutorial</title>
+		<meta charset="utf-8">
+	</head>
+
+
+<body>
+
+<form name = "Employment" action = "send.php" method = "post">
+ <table width="600" border="1" cellspacing="2" cellpadding="2">
+    <tr>
+      <td colspan = "2" align="center">Employment Application</td>
+    </tr>
+    <tr>
+      <td>Name</td>
+      <td><input type = "text" name = "name" maxlength="50" /></td>
+    </tr>
+    <tr>
+      <td>Last Name</td>
+      <td><input type = "text" name = "surname" maxlength="50" /></td>
+    </tr>
+    <tr>
+      <td>Position</td>
+      <td>
+        <select name = "position">
+
+          <option value = "Accountant">Accountant</option>
+          <option value = "Receptionist">Receptionist</option>
+          <option value = "Administrator">Administrator</option>
+          <option value = "Supervisor">Supervisor</option>
+          
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Experience Level</td>
+      <td>
+        <select name = "Experience Level">
+
+          <option value = "Entrt Level">Entry Level</option>
+          <option value = "Some Experience">Some Experience</option>
+          <option value = "Very Experienced">Very Experienced</option>
+          
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>Job Type</td>
+      <td>
+        <input type = "checkbox" name = "Job Type"/>Full-Time
+        <input type = "checkbox" name = "Part Type"/>Part-Time
+      </td>
+    </tr>
+    <tr>
+      <td>Employment Status</td>
+      <td>
+        <input type = "radio" name = "Status"/>Employed
+        <input type = "radio" name = "Status"/>Unemployed
+      </td>
+    </tr>
+    <tr>
+      <td>Additional Comments</td>
+      <td>
+        <textarea name = "comments" cols = "45" rows = "5"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <input type = "submit" name = "submit" value = "submit"/>
+        <input type = "reset" name = "reset" value = "reset"/>
+      </td>
+    </tr>
+  </table>
+</form>
+
+
+</body>
+</html>
